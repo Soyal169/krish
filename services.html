@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii - Cofetaria Marabou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+            padding: 120px 0 60px; /* More top padding to clear fixed header */
+            text-align: center;
+            color: #fff;
+        }
+        .page-header h2 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .service-list {
+            padding: 60px 0;
+            display: grid;
+            gap: 40px;
+        }
+        .service-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-pink);
+            min-width: 80px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .service-item { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Marab<span class="cherry">🍒</span>u</h1>
+                <span>PATISSERIE</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Delights for your special events</p>
+        </div>
+    </div>
+
+    <div class="container service-list">
+        <div class="service-item">
+            <div class="service-icon"><i class="fas fa-birthday-cake"></i></div>
+            <div>
+                <h3>Custom Cakes</h3>
+                <p>We create unique cakes for weddings, baptisms, or anniversaries. Any design is possible in our laboratory.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <div class="service-icon"><i class="fas fa-cookie-bite"></i></div>
+            <div>
+                <h3>Candy Bar</h3>
+                <p>A spectacular sweet corner for your guests. Cupcakes, cake pops, macarons, and much more, styled to perfection.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <div class="service-icon"><i class="fas fa-truck"></i></div>
+            <div>
+                <h3>Event Delivery</h3>
+                <p>We provide specialized refrigerated transport so that our products arrive safely at your event location.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <div class="service-icon"><i class="fas fa-users"></i></div>
+            <div>
+                <h3>Tastings</h3>
+                <p>We invite you to a tasting session to choose the perfect flavors for your wedding cake.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Surprises</h4>
+                <p>Surprise your loved ones! Choose a cake, pay online, and we will deliver it to their doorstep.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Seattle, 123 Baker Street</p>
+                <p>Tel: +1 234 567 890</p>
+                <p>Email: contact@marabou.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Order Now</h4>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone Number">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn-tiny">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Marabou Patisserie. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
